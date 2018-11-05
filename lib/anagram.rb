@@ -14,7 +14,11 @@ class Anagram
       sub_array
     end
     compare_two.each do |split_word|
-      array[split_word.index] if split_word == compare_two
+      if split_word == compare_two
+        array[split_word.index]
+      else
+        []
+      end
     end
 
   end
