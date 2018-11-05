@@ -19,6 +19,6 @@ class Anagram
         result << split_word
       end
     end
-    result
+    result.join
   end
 end
