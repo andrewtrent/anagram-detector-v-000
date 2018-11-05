@@ -16,7 +16,7 @@ class Anagram
 
     compare_two.each do |split_word|
       if split_word.sort == compare_one.sort
-        result << array[split_word.index]
+        array[split_word.index]
       end
     end
     result
