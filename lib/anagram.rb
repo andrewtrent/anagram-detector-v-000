@@ -17,4 +17,5 @@ class Anagram
       array[split_word.index] if split_word == compare_two
     end
 
+  end
 end
