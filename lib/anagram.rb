@@ -7,16 +7,16 @@ class Anagram
   end
 
   def match(array)
+    result = []
+
     compare_one = @word.split("")
     compare_two = array.map do |word|
       word.split("")
-
     end
+
     compare_two.each do |split_word|
-      if split_word == compare_two
+      if split_word.sort == compare_one.sort
         array[split_word.index]
-      else
-        []
       end
     end
 
