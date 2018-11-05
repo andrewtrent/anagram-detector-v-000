@@ -8,7 +8,7 @@ class Anagram
 
   def match(array)
     compare_one = @word.split("")
-    compare_two = array.map |word| do
+    compare_two = array.map do |word|
       sub_array = []
       sub_array << word.split("")
       sub_array
